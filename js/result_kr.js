@@ -5,7 +5,7 @@ $(function(){
 		score = localStorage.getItem('nyankoshindan_point');
 	}
 	
-	//console.log(score);
+	console.log(score);
 
 
 	var name_area = document.getElementById('txt_name');
