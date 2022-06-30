@@ -1,0 +1,865 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  /*background-color:#ff9;*/
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*#########################################################
+
+要素関連
+
+#########################################################*/
+html {
+  width: 100%; }
+
+body {
+  width: 100%;
+  font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #242424; }
+
+a {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+a:hover {
+  opacity: .8; }
+
+/*#########################################################
+
+共通パーツ
+
+#########################################################*/
+main {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+div.box-inner {
+  width: 950px;
+  margin: 0 auto; }
+  @media screen and (max-width: 950px) {
+    div.box-inner {
+      margin: 0 2%;
+      width: 96%; } }
+
+/*#########################################################
+
+ヘッダー
+
+#########################################################*/
+header {
+  height: 65px;
+  width: 100%;
+  background: #ffffff; }
+  @media screen and (max-width: 768px) {
+    header {
+      height: 45px; } }
+  header div.logo {
+    width: 950px;
+    margin: 0 auto; 
+		text-align: left;
+}
+    @media screen and (max-width: 950px) {
+      header div.logo {
+        width: 100%; } 
+}
+    header div.logo a {
+      display: inline-block;
+			transition: none;
+			padding: 3px 0 0 0;
+}
+      @media screen and (max-width: 950px) {
+        header div.logo a {
+          padding-left: 2%; } 
+}
+      @media screen and (max-width: 768px) {
+        header div.logo a {
+          width: 140px;
+          line-height: 45px; } 
+}
+      header div.logo a img {
+        vertical-align: middle; 
+}
+  header h1 a {
+    font-weight: bold;
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #e37b00; }
+
+/*#########################################################
+
+フッター
+
+#########################################################*/
+footer {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 100%;
+  background: #ff9600;
+  position: absolute; }
+  footer div#footer-box {
+    width: 950px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 0 10px; }
+    @media screen and (max-width: 950px) {
+      footer div#footer-box {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+    footer div#footer-box div.logo-sub {
+      width: 135px; }
+      @media screen and (max-width: 768px) {
+        footer div#footer-box div.logo-sub {
+          width: 15%; } }
+      @media screen and (max-width: 640px) {
+        footer div#footer-box div.logo-sub {
+          width: 25%; } }
+      footer div#footer-box div.logo-sub img {
+        width: 100%; }
+    footer div#footer-box ul.link-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 0.9375rem; }
+      @media screen and (max-width: 950px) {
+        footer div#footer-box ul.link-list {
+          margin: 30px 0; } }
+      @media screen and (max-width: 768px) {
+        footer div#footer-box ul.link-list {
+          margin: 25px 0; } }
+      footer div#footer-box ul.link-list li {
+        padding: 0 20px; }
+        footer div#footer-box ul.link-list li a {
+          color: #ffffff;
+          text-decoration: none; }
+    footer div#footer-box ul.sns-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      footer div#footer-box ul.sns-box li {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-right: 30px;
+        width: 45px; }
+        footer div#footer-box ul.sns-box li:last-child {
+          margin-right: 0; }
+        footer div#footer-box ul.sns-box li img {
+          width: 100%; }
+  footer p.footer_copy {
+    text-align: center;
+    font-size: 0.8125rem; }
+    @media screen and (max-width: 768px) {
+      footer p.footer_copy {
+        font-size: 0.75rem; } }
+
+/*#########################################################
+
+TOP to
+
+#########################################################*/
+#page-top {
+  position: fixed;
+	bottom: -195px;
+  right: 20px;
+  width: 87px;
+  z-index: 100; }
+  @media screen and (max-width: 768px) {
+    #page-top {
+      right: 2%;
+      width: 50px; } }
+  #page-top a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block; }
+    #page-top a img {
+      width: 100%; }
+    #page-top a:hover {
+      text-decoration: none;
+      opacity: 1; }
+
+/* buruburu hoverアニメ */
+a.buruburu {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent; }
+
+.buruburu:hover {
+  -webkit-animation-name: buruburu;
+  animation-name: buruburu;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+/* buruburu アニメ */
+@-webkit-keyframes buruburu {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+
+@keyframes buruburu {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+
+/*#########################################################
+
+ダウンロードボックス
+
+#########################################################*/
+div#download-box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 90px auto 0;
+  padding-bottom: 140px;
+  background: url("../images/common/neco_bottom.png") left bottom repeat-x; }
+  @media screen and (max-width: 768px) {
+    div#download-box {
+      margin: 18% auto 0;
+      background-size: 60%;
+      padding-bottom: 22%; } }
+  div#download-box div#download-info {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 950px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px 1.5% 20px;
+    background-color: #ffd659;
+    border: 2px solid #000000;
+    background-image: -webkit-linear-gradient(110deg, #ffc000 50%, #ffd659 50%);
+    background-image: -o-linear-gradient(110deg, #ffc000 50%, #ffd659 50%);
+    background-image: linear-gradient(-20deg, #ffc000 50%, #ffd659 50%);
+    border-radius: 8px;
+    position: relative; }
+    @media screen and (max-width: 950px) {
+      div#download-box div#download-info {
+        width: 98%; } }
+    @media screen and (max-width: 768px) {
+      div#download-box div#download-info {
+        background-image: -webkit-linear-gradient(135deg, #ffc000 50%, #ffd659 50%);
+        background-image: -o-linear-gradient(135deg, #ffc000 50%, #ffd659 50%);
+        background-image: linear-gradient(-45deg, #ffc000 50%, #ffd659 50%);
+        padding: 8% 1.5% 20px; } }
+    div#download-box div#download-info p.download-box-ttl {
+      position: absolute;
+      top: -23%; }
+      div#download-box div#download-info p.download-box-ttl img {
+        width: 63%; }
+      @media screen and (max-width: 768px) {
+        div#download-box div#download-info p.download-box-ttl {
+          top: -15%;
+          text-align: center; }
+          div#download-box div#download-info p.download-box-ttl img {
+            width: 74%; } }
+      @media screen and (max-width: 640px) {
+        div#download-box div#download-info p.download-box-ttl {
+          top: -10%;
+          text-align: center; }
+          div#download-box div#download-info p.download-box-ttl img {
+            width: 80%; } }
+    div#download-box div#download-info ul#download-date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media screen and (max-width: 768px) {
+        div#download-box div#download-info ul#download-date {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+      @media screen and (max-width: 640px) {
+        div#download-box div#download-info ul#download-date {
+          display: block; } }
+      div#download-box div#download-info ul#download-date li.download-list {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 2%;
+        width: 22%; }
+      div#download-box div#download-info ul#download-date li.datelist01 {
+        width: 16%; }
+        @media screen and (max-width: 768px) {
+          div#download-box div#download-info ul#download-date li.datelist01 {
+            width: 20%; } }
+        @media screen and (max-width: 640px) {
+          div#download-box div#download-info ul#download-date li.datelist01 {
+            text-align: center;
+            margin: 0 auto 15px; } }
+        div#download-box div#download-info ul#download-date li.datelist01 img {
+          width: 100%; }
+      div#download-box div#download-info ul#download-date li.datelist02 {
+        width: 60%; }
+        @media screen and (max-width: 768px) {
+          div#download-box div#download-info ul#download-date li.datelist02 {
+            padding-left: 5%;
+            width: 80%; } }
+        @media screen and (max-width: 640px) {
+          div#download-box div#download-info ul#download-date li.datelist02 {
+            width: 100%; } }
+        div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details {
+            ustify-content: space-between;
+            width: 33%; }
+            div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details dl.apps-details-top {
+              margin-bottom: 20px; }
+            div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details dt {
+              padding-bottom: 7px;
+              margin-bottom: 8px;
+              font-weight: bold;
+              position: relative;
+              font-size: 0.875rem; }
+              div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details dt span.details-line {
+                display: block;
+                position: absolute;
+                background: #ff9600;
+                width: 15px;
+                height: 3px;
+                bottom: 0;
+                left: 0; }
+            div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details dd {
+              font-size: 0.875rem; }
+              @media screen and (max-width: 640px) {
+                div#download-box div#download-info ul#download-date li.datelist02 div.apps-details-box div.apps-details dd {
+                  font-size: 0.8125rem; } }
+      div#download-box div#download-info ul#download-date li.datelist03 {
+        width: 25%; }
+        @media screen and (max-width: 768px) {
+          div#download-box div#download-info ul#download-date li.datelist03 {
+            width: 100%; }
+            div#download-box div#download-info ul#download-date li.datelist03 li {
+              width: 50%;
+              padding-top: 10px; }
+              div#download-box div#download-info ul#download-date li.datelist03 li:first-child {
+                padding-right: 10%; } }
+        div#download-box div#download-info ul#download-date li.datelist03 ul#apps-shop li:first-child {
+          margin-bottom: 10px; }
+        @media screen and (max-width: 768px) {
+          div#download-box div#download-info ul#download-date li.datelist03 ul#apps-shop {
+            margin-top: 15px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            div#download-box div#download-info ul#download-date li.datelist03 ul#apps-shop li:first-child {
+              margin-bottom: 0px; } }
+        div#download-box div#download-info ul#download-date li.datelist03 ul#apps-shop li img {
+          width: 100%; }
+
+/*#########################################################
+
+キャンペーン内容
+
+#########################################################*/
+section#campaign {
+  padding-top: 50px;
+  /* border-box*/
+  /* SNS*/
+  /*#########################################################
+
+	注意事項
+
+	#########################################################*/ }
+  @media screen and (max-width: 768px) {
+    section#campaign {
+      padding-top: 30px; } }
+  section#campaign div#campaign-box {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    background: url("../images/common/bg_text_box.png") right bottom no-repeat, url("../images/common/bg_textbox.gif") left top repeat;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 40px 40px 25px;
+    width: 950px;
+    margin: 0px auto; }
+    @media screen and (max-width: 950px) {
+      section#campaign div#campaign-box {
+        width: 96%;
+        margin: 0px 2%  30px; } }
+    @media screen and (max-width: 768px) {
+      section#campaign div#campaign-box {
+        width: 96%;
+        margin: 0px 2%  30px;
+        padding: 4%; } }
+    @media screen and (max-width: 640px) {
+      section#campaign div#campaign-box {
+        background: url("../images/common/bg_text_box.png") right bottom/38% no-repeat, url("../images/common/bg_textbox.gif") left top repeat; } }
+    section#campaign div#campaign-box h2.detail-ttl {
+      margin-bottom: 30px;
+      text-align: center; }
+      section#campaign div#campaign-box h2.detail-ttl img {
+        width: 50%; }
+      @media screen and (max-width: 768px) {
+        section#campaign div#campaign-box h2.detail-ttl img {
+          width: 70%; } }
+      @media screen and (max-width: 640px) {
+        section#campaign div#campaign-box h2.detail-ttl {
+          margin-bottom: 20px;
+          margin-top: 5px; }
+          section#campaign div#campaign-box h2.detail-ttl img {
+            width: 90%; } }
+    section#campaign div#campaign-box h3#campaign-ttl {
+      font-size: 1.4375rem;
+      text-align: center;
+      width: 85%;
+      margin: 20px  auto 40px; }
+      @media screen and (max-width: 768px) {
+        section#campaign div#campaign-box h3#campaign-ttl {
+          font-size: 1.25rem;
+          width: 100%; } }
+      section#campaign div#campaign-box h3#campaign-ttl span.campaign-line {
+        height: 2px;
+        display: block;
+        background-image: -webkit-linear-gradient(135deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000);
+        background-image: -o-linear-gradient(135deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000);
+        background-image: linear-gradient(-45deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000);
+        margin: 20px 0;
+        background-size: 4px 4px; }
+    section#campaign div#campaign-box h4.topic-ttl {
+      font-size: 1rem;
+      color: #006d88;
+      font-weight: bold;
+      position: relative;
+      margin: 40px 0 20px;
+      padding-bottom: 10px; }
+      @media screen and (max-width: 768px) {
+        section#campaign div#campaign-box h4.topic-ttl {
+          margin: 30px 0 15px;
+          padding-bottom: 8px; } }
+      section#campaign div#campaign-box h4.topic-ttl span.ttl-line {
+        display: block;
+        position: absolute;
+        background: #006d88;
+        width: 20px;
+        height: 2px;
+        bottom: 0;
+        left: 0; }
+    section#campaign div#campaign-box p {
+      line-height: 1.8;
+      margin-bottom: 15px; }
+  section#campaign ul.border-box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px; }
+    section#campaign ul.border-box li {
+      padding: 20px 0;
+      border-bottom: 1px dotted #cccccc; }
+      section#campaign ul.border-box li:last-child {
+        border-bottom: none; }
+  section#campaign h4.twitter-topic, section#campaign h4.facebook-topic, section#campaign h4.line-topic {
+    font-weight: bold;
+    font-size: 0.9375rem;
+    margin: 30px 0 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    section#campaign h4.twitter-topic .demoSpan1, section#campaign h4.facebook-topic .demoSpan1, section#campaign h4.line-topic .demoSpan1 {
+      border-radius: 20px;
+      height: 7px;
+      width: 7px;
+      border: 3px solid;
+      margin-right: 8px; }
+  section#campaign h4.twitter-topic {
+    color: #1da1f2; }
+  section#campaign h4.facebook-topic {
+    color: #3b5998; }
+  section#campaign h4.line-topic {
+    color: #00b900; }
+  section#campaign .txt-twitter {
+    color: #1da1f2; }
+  section#campaign .txt-facebook {
+    color: #3b5998; }
+  section#campaign .txt-line {
+    color: #00b900; }
+  section#campaign p.txt-center {
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 0px; }
+  section#campaign div.sns-btn {
+    text-align: center;
+    margin: 0px 0; }
+    section#campaign div.sns-btn img {
+      width: 35%; }
+      @media screen and (max-width: 950px) {
+        section#campaign div.sns-btn img {
+          width: 50%; } }
+      @media screen and (max-width: 768px) {
+        section#campaign div.sns-btn img {
+          width: 58%; } }
+      @media screen and (max-width: 640px) {
+        section#campaign div.sns-btn img {
+          width: 75%; } }
+  section#campaign ul.line-list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section#campaign ul.line-list-box li {
+      width: 30%; }
+      section#campaign ul.line-list-box li img {
+        width: 100%; }
+      @media screen and (max-width: 768px) {
+        section#campaign ul.line-list-box li {
+          width: 45%; } }
+    section#campaign ul.line-list-box li:first-child {
+      padding-right: 3%; }
+  section#campaign div#attended-box {
+    font-size: 0.8125rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #595959;
+    margin: 40px 0 0;
+    border-top: 1px dotted #cccccc;
+    padding-top: 30px; }
+    section#campaign div#attended-box h4.attended-topic {
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px; }
+
+/*装飾*/
+div.txt-border-bracket {
+  position: relative;
+  top: 0; }
+  div.txt-border-bracket:before, div.txt-border-bracket:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 10px;
+    height: 100%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  div.txt-border-bracket:before {
+    border-left: dotted 2px #d61518;
+    border-top: dotted 2px #d61518;
+    border-bottom: dotted 2px #d61518;
+    left: 0; }
+  div.txt-border-bracket:after {
+    border-top: dotted 2px #d61518;
+    border-right: dotted 2px #d61518;
+    border-bottom: dotted 2px #d61518;
+    right: 0; }
+  div.txt-border-bracket .contents {
+    padding: 5px 15px;
+    color: #d61518;
+    margin: 10px 0 0;
+    text-align: center;
+    font-weight: bold; }
+
+/* 共通クラス*/
+.bold {
+  font-weight: bold; }
+
+.fs13 {
+  font-size: 0.8125rem; }
+
+.fs16 {
+  font-size: 1rem; }
+
+.fs20 {
+  font-size: 1.25rem; }
+
+.fs24 {
+  font-size: 1.5rem; }
+
+.fs26 {
+  font-size: 1.625rem; }
+
+.fs30 {
+  font-size: 1.875rem; }
+
+.font-red {
+  color: #f43716; }
+
+.font-pink {
+  color: #ff61c0; }
+
+.font-green {
+  color: #39ba32; }
+
+.font-blue {
+  color: #2066ee; }
+
+.font-aqua {
+  color: #74cafb; }
+
+.font-orange {
+  color: #fb9700; }
+
+.font-aqua {
+  color: #5f3af2; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.mb60 {
+  margin-bottom: 60px; }
+
+.mb80 {
+  margin-bottom: 80px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mt60 {
+  margin-top: 60px; }
+
+.mt80 {
+  margin-top: 80px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.ml40 {
+  margin-left: 40px; }
+
+.ml60 {
+  margin-left: 60px; }
+
+.ml80 {
+  margin-left: 80px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mr40 {
+  margin-right: 40px; }
+
+.mr60 {
+  margin-right: 60px; }
+
+.mr80 {
+  margin-right: 80px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pb40 {
+  padding-bottom: 40px; }
+
+.pb60 {
+  padding-bottom: 60px; }
+
+.pb80 {
+  padding-bottom: 80px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pt40 {
+  padding-top: 40px; }
+
+.pt60 {
+  padding-top: 60px; }
+
+.pt80 {
+  padding-top: 80px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.pl40 {
+  padding-left: 40px; }
+
+.pl60 {
+  padding-left: 60px; }
+
+.pl80 {
+  padding-left: 80px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pr40 {
+  padding-right: 40px; }
+
+.pr60 {
+  padding-right: 60px; }
+
+.pr80 {
+  padding-right: 80px; }
+
+/*#########################################################
+キャンペーン
+#########################################################*/
+div#main-img {
+  background: #ffffff;
+  overflow: hidden; }
+  @media screen and (max-width: 950px) {
+    div#main-img img {
+      width: 100%; } }
+  div#main-img h1 {
+    line-height: 0;
+    text-align: center; }

@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+	
+	/*
+	background: -webkit-linear-gradient(left, #f0f0f0 0%, #fcfcfc 35%, #fcfcfc 65%, #f0f0f0 100%);
+	background: linear-gradient(to right, #f0f0f0 0%, #fcfcfc 35%, #fcfcfc 65%, #f0f0f0 100%);
+	*/
+
+	/*background-image:url(../img/bg_chara01.png);*/
+	background-color: #faf9f9;
+	background-repeat:repeat;
+	background-position:left top;
+	background-size :45%;
+	
+	min-width:320px;	
+}
+
+a{
+	outline:none;
+	text-decoration:none;
+	word-break : break-all;
+}
+
+
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */
+
+
+a:link,
+a:hover,
+a:visited{
+	color: #006cff;
+	text-decoration: underline;
+}
+
+.only_ios{
+	display:none;
+}
+
+.other_ios{
+	display:none;
+}
+
+.only_android{
+	display:none;
+}
+
+.only_pc{
+	display:none;
+}
+
+.hdn{
+	text-align:center !important;
+	width:100% !important;
+	position:absolute !important;
+	top:0 !important;
+	left:0 !important;
+	z-index:-999 !important;
+	visibility:hidden !important;
+}
+
+img{
+	border: none;
+	max-width: 100%;
+	height: auto;
+	vertical-align:middle;
+}
+
+
+h1{
+	background-color:#111;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	font-size:1.1rem;
+	line-height:1.8;
+}
+@media (max-width: 640px) {
+	h1{
+		font-size:1rem;
+	}
+}
+
+footer{
+	position:relative;
+	overflow:hidden;
+	min-width:320px;	
+}
+
+article{
+	width:100%;
+	/*
+	background-image:url(../img/common/neco_bottom.png);
+	*/
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	padding: 0 0 50px 0;
+	background-color: #fff099;
+}
+@media (max-width: 640px) {
+	article{
+		background-size: 60%;
+	}
+}
+
+
+#main_area {
+	text-align: center;
+	margin: 0 auto 0 auto;
+	max-width: 956px;
+	text-align: left;
+	padding: 0;
+}
+
+
+.content{
+	width:100%;
+	box-sizing: border-box;
+	margin:3% auto 7% auto;
+	line-height:1.8;	
+	border-radius: 16px;
+	background-color: rgba(0,0,0,0.10);
+	padding: 2px;
+	/*
+	background:
+	url(../img/common/bg_text_box.png) right bottom no-repeat,
+	url(../img/common/bg_textbox.gif) left top repeat;
+	background-color: #fff;
+	*/
+	
+	/*box-shadow: 0 0px 50px rgba(0,0,0,0.4);*/
+	
+	overflow:hidden;
+}
+
+
+.cnt_box01{
+	background-color: #fff;
+	/*border: solid 1px #ccc;*/
+	border-radius: 16px;
+	/*background-color: #fc0;*/
+}
+
+
+.cnt_box02{
+	padding:20px 0 30px 0;
+}
+
+
+
+@media (max-width: 760px) {
+	#main_area {
+		padding: 0 4px;
+	}
+	.content{
+		padding:0px;
+	}
+	
+	.content .block{
+		padding:0 15px;
+	}
+}
+
+
+.img_box{
+	max-width: 880px;
+}
+
+.content p{
+	line-height:1.8;	
+}
+
+div#download-box{
+	padding-top:0;
+	margin-top:0;
+	background-image:none;
+}
+
+div#download-box div#download-info{
+	margin:50px auto 0 auto;
+}
+
+
+
+.dl_box{
+	text-align:center;
+	max-width:540px;
+	margin:0 auto;
+}
+
+.dl_box .dl_hlt{
+	width:80%;
+	margin:0 auto;
+	padding:8% 0 4% 0;
+}
+
+
+.dl_box .dl_btn{
+	overflow:hidden;
+	padding:0 0 12% 0;
+}
+
+.dl_box .dl_btn li{
+	width:47%;
+	padding:0 1.5%;
+	float:left;
+}
+
+
+/* Shared Styles
+******************************************************************************************************************************************************************************************************/ 
+
+.t_center{
+	text-align: center;
+	display: block;
+}
+
+span.orange{
+	color: #FF6600;
+}
+
+span.blue{
+	color: #00acee;
+}
+
+span.deepblue{
+	color: #374f8e;
+}
+
+span.red{
+	color: #F00;
+}
+
+span.yellow{
+	color: #FF0;
+}
+
+span.green{
+	color: #008f03;
+}
+
+span.purple{
+	color: #82318E;
+}
+
+span.pink{
+	color: #F0F;
+}
+
+span.lime{
+	color: #ac0;
+}
+
+span.brightyellow{
+	color: #fc0;
+}
+
+
+span.fs120{
+	font-size: 120%;
+}
+
+span.fs84{
+	font-size: 84%;
+}
+
+span.fs76{
+	font-size: 76%;
+}
+
+span.fw{
+	font-weight: bold;
+}
+
+.pt_s{
+	padding-top: 6px;
+	display: block;
+}
+
+.caution{
+	border: 2px solid #FF0004;
+	padding: 5px;
+	border-radius: 5px;
+	display: block;
+}
+
+
+
+
+
