@@ -149,7 +149,7 @@ $(function(){
 
 			//console.log(_canvas.width);
 			//Card.src = "img/hokaku/card_base.jpg";
-			Card.src = "img/card_base_" + bgimg + "_kr.png";
+			Card.src = "img/card_base_" + bgimg + ".png";
 			Card.onload = function(){
 				var canvas = document.querySelector("#image1");
 				var ctx = canvas.getContext("2d");
